@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ---------------------Maktab 66----------------------------- */
+.wave {
+  font-family: cursive;
+  font-size: 60px;
+  width:500px;
+  height:500px;
+  margin:0 auto;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-150px;
+  margin-top:-50px;
+}
+.wave:hover{
+  animation: leaves 3s ease-in-out infinite alternate;
+  -webkit-animation: leaves 3s ease-in-out infinite alternate;
+}
+@keyframes leaves {
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(2.0);
+  }
+}
+/* -------------------------------------------------- */
+.wave span:nth-child(2n+1) {
+  position: relative;
+  display: inline-block;
+  color: rgb(5, 104, 35);
+  animation: jump 1s infinite;
+  animation-delay: calc(.1s);
+}
+.wave span:nth-child(2n) {
+  position: relative;
+  display: inline-block;
+  color: rgb(5, 104, 35);
+  animation: jump 1s infinite;
+  animation-delay: calc(.2s)
+}
+@keyframes jump {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-30px)
+  }
+}
+/* -----------------------squre--------------------------- */
+
+.container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.squre1,.squre3,.squre5{
+    position: absolute;
+    margin:20px auto;
+    -webkit-animation:rotate 1.5s  infinite;
+    animation: rotate 1.5s infinite;
+}
+.squre2,.squre4{
+  position: absolute;
+  margin:20px auto;
+  -webkit-animation:rotate 1.3s  infinite;
+  animation: rotate 1.3s infinite;
+}
+  .squre1{
+    width:200px;
+    height:200px;
+    background-color:rgb(0, 122, 65);
+  }
+  .squre2{
+    width:180px;
+    height:180px;
+    background-color:rgb(0, 156, 83);
+  }
+  .squre3{
+    width:160px;
+    height:160px;
+    background-color:rgb(3, 180, 97);
+  }
+  .squre4{
+    width:140px;
+    height:140px;
+    background-color:rgb(4, 221, 120);
+  }
+  .squre5{
+    width:120px;
+    height:120px;
+    background-color:rgb(35, 252, 151);
+  }
+  
+
+  @keyframes rotate{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+  } 
+  @keyframes rotate2{
+    100% {transform:rotate(0deg);}
+    90% {transform:rotate(36deg);}
+    80% {transform:rotate(72deg);}
+    70% {transform:rotate(108deg);}
+    60% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    40% {transform:rotate(216deg);}
+    30% {transform:rotate(252deg);}
+    20% {transform:rotate(288deg);}
+    10% {transform:rotate(334deg);}
+    0% {transform:rotate(360deg);}
+  } 
+  
